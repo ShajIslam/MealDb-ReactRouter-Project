@@ -10,10 +10,11 @@ import {
 
 import ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
 import Home from './Components/Home/Home.jsx';
-import Popular from './Components/AllCategories/AllCategories.jsx';
 import MainLayout from './Components/MainLayout/MainLayout.jsx';
 import ShowDetails from './Components/ShowDetails/ShowDetails.jsx';
 import AllCategories from './Components/AllCategories/AllCategories.jsx';
+
+
 
 
 const router = createBrowserRouter([
@@ -34,9 +35,9 @@ const router = createBrowserRouter([
         element: <ShowDetails></ShowDetails>
       },
       {
-        path: '/all',
-        loader:()=> fetch('https://www.themealdb.com/api/json/v1/1/categories.php'),
-        element:<AllCategories></AllCategories>
+        path:'/all',
+        loader: ()=>fetch('https://www.themealdb.com/api/json/v1/1/categories.php'),
+        element: <AllCategories></AllCategories>
       }
 
     ]

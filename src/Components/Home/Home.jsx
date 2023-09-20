@@ -16,7 +16,7 @@ const Home = () => {
             <br />
             <br />
            
-           <div className="grid grid-cols-3 gap-24">
+           <div className="grid grid-cols-3 gap-10">
 
            
        {
